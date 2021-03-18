@@ -30,7 +30,7 @@ git status
 
 > 将本地仓库更改推送到云端
 ```linux
-git push
+git push origin main
 ```
 
 > 查看日志
@@ -79,3 +79,15 @@ git commit -m "delete something."
 ```linux
 git mv oldfile.name newfile.name
 ```
+
+## 才远程仓库获取最新代码合并到本地分支
+
+```linux
+// 查询当前云端仓库的版本
+git remote -v 
+
+// 直接拉取并合并最新代码(合并到main分支)
+git pull origin main
+
+```
+
